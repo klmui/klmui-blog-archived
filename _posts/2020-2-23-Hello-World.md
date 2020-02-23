@@ -3,7 +3,7 @@ layout: post
 title: Hello World! | February 23rd, 2020
 ---
 
-This is my first ever blog! I've been writing in a growth journal for a year now, and I am hoping that this experience will help me grow even more! I am excited to start writing publically and share my experiences about life and coding. Here are some of my favorite pictures from the summer of 2019 at Devil's Lake in Baraboo, WI!
+This is my first ever blog! I've been writing in a daily growth journal for a year now, and I am hoping that this experience will help me grow even more! I am excited to start writing publically and share my experiences about life and coding. However, I am not sure if I want to update this blog weekly or monthly yet. Here are some of my favorite pictures from the summer of 2019 at Devil's Lake in Baraboo, WI!
 
 ![alt text](https://lh3.googleusercontent.com/k5k6RMlQUGZQtxqWK0Ku6A3sT86cQA92JKMRInEOiYsDU6Zu9GwA1uQS5-Cd_MJJcOlP1CXLNg6nq0ZrC7mH7nLvfBe4wlBrQSN1L2_uZrzFUc_jxm_KOlrPJ4cCDTLPl-IYvJrjQqXkMy9PcF91_M4p5mL2GO8LGQgCDvs-w-7UveV4UdFuSYPiQ1yBiYw3339WVDnV7g0kQjQRTUHpYuFeSs7Z9TYXMEjdhy6diyDLp_-NTE0EQgUEDnVhlUlxjal-aXmxiNlaYGNZ9mLZA-hGbKQmtX5ko2G07yGUCfzBpFi5OxLO1mfbY_W33OUrHX44RHgp5fjx8Ka56vYXyb9OOnJRtHr4kbr5cUQIJzO4Ji78NLV5Ns_Q9v1Fn3GNtTF8BNcNnUi8d7k9YcSgFzVJHGKjvjwS3SQkT3VpC_lzrPN5KOqfC9Eq8bcCjvgOdHDat7z3AVXpBe_8Qnfhu6dGyV_3aObv2W89U75fRmgPOx2vGrubqMqSm9YzDwjivSO-H07I8ZjiuJfXdSEANGAwAm6R9sCVWhXIOlfROJR2DoExAFQabe7MQZF6dpDOvnO2Fo-vmj6a6dxaFXrBovEYCEGsWbPnhdf9lOKzeYKUAeg-wA-_BV4Q-aIuDPjAICdiPthBvVE44UNnBmL335jpKNAF0PBOiYBy4UkJpcXWK6Zi8KQFXN8=s625-no "Logo Title Text 1")
 
