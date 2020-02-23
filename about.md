@@ -12,10 +12,10 @@ Hi! My name is Kenny and I am currently a sophomore at The Univeristy of Wiscons
 | ----------- | ----------- | ----------- |
 | HTML        | Bootstrap   | MongoDB |
 | CSS         | Node.js     | MySQL   |
-| JavaScript  | Angular     |    |
-| Java        | Ionic       |    |
-| Python      | Symfony     |    |
-| PHP         | JavaFX      |    |
+| JavaScript  | Angular     |   
+| Java        | Ionic       |   
+| Python      | Symfony     |   
+| PHP         | JavaFX      |   
 
 ### Classes I Have Taken/Taking at UW-Madison
 - CS 400 (Data Structures + Advanced Java)
