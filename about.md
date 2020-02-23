@@ -8,14 +8,58 @@ Hi! My name is Kenny and I am currently a sophomore at The Univeristy of Wiscons
 
 ### Coding Technologies I am Familiar With
 
-| Languages   | Frameworks/Platforms | Databases |
-| ----------- | ----------- | ----------- |
-| HTML        | Bootstrap   | MongoDB |
-| CSS         | Node.js     | MySQL   |
-| JavaScript  | Angular     |   
-| Java        | Ionic       |   
-| Python      | Symfony     |   
-| PHP         | JavaFX      |   
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+        }
+</style>
+
+<table class="tablelines">
+  <thead>
+    <tr>
+      <th style="text-align: center">Languages</th>
+      <th style="text-align: center">Frameworks/Platforms</th>
+      <th style="text-align: center">Databases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">HTML</td>
+      <td style="text-align: center">Bootstrap</td>
+      <td style="text-align: center">MongoDB</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CSS</td>
+      <td style="text-align: center">Node.js</td>
+      <td style="text-align: center">MySQL</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">JavaScript</td>
+      <td style="text-align: center">Angular</td>
+      <td style="text-align: center"></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Java</td>
+      <td style="text-align: center">Ionic</td>
+      <td style="text-align: center"></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Python</td>
+      <td style="text-align: center">Symfony</td>
+      <td style="text-align: center"></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">PHP</td>
+      <td style="text-align: center">JavaFX</td>
+      <td style="text-align: center"></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"></td>
+      <td style="text-align: center">Android Studio</td>
+      <td style="text-align: center"></td>
+    </tr>
+  </tbody>
+</table> 
 
 ### Classes I Have Taken/Taking at UW-Madison
 - CS 400 (Data Structures + Advanced Java)
