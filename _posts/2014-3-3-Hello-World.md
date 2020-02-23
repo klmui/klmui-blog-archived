@@ -3,7 +3,12 @@ layout: post
 title: Hello World! | 2-23-20
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+---
+layout: post
+title: Hello World! | 2-23-20
+---
+
+This is my first ever blog! I've been writing in a growth journal for a year now, and I am hoping that this experience will help me grow even more! I am excited to start writing publically and share my experiences about life and coding.
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
