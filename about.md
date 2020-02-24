@@ -17,9 +17,9 @@ Hi! My name is Kenny and I am currently a sophomore at The Univeristy of Wiscons
 <table class="tablelines">
   <thead>
     <tr>
-      <th style="text-align: center">Languages</th>
-      <th style="text-align: center">Frameworks/Platforms</th>
-      <th style="text-align: center">Databases</th>
+      <th style="text-align: center"><strong>Languages</strong></th>
+      <th style="text-align: center"><strong>Frameworks/Platforms</strong></th>
+      <th style="text-align: center"><strong>Databases</strong></th>
     </tr>
   </thead>
   <tbody>
