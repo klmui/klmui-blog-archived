@@ -58,6 +58,11 @@ Hi! My name is Kenny and I am currently a sophomore at The Univeristy of Wiscons
       <td style="text-align: center">Android Studio</td>
       <td style="text-align: center"></td>
     </tr>
+    <tr>
+      <td style="text-align: center"></td>
+      <td style="text-align: center">Unity</td>
+      <td style="text-align: center"></td>
+    </tr>
   </tbody>
 </table> 
 
