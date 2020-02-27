@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Passion and Purpose - UW-Madison Essay | February 23rd, 2020
+comments: true
 ---
 
 My cross country and track journey is best described through my application essay for UW-Madison. I hope this inspires you!
