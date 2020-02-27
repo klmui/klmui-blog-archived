@@ -20,6 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
+  font-family: 'Noto Sans JP', ;
   color: $darkGray;
 }
 
@@ -270,6 +271,16 @@ nav {
     padding-bottom: 1em;
     border-bottom: none;
   }
+}
+
+.project > .project {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.projects > .project:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
 }
   
 .project {
