@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World! | February 22nd, 2020
+title: Hello World!
 comments: true
 ---
 

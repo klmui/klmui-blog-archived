@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Best Programming Language to Teach CS | February 26th, 2020
+title: Best Programming Language to Teach CS
 comments: true
 ---
 
