@@ -3,9 +3,11 @@ layout: default
 ---
 
 <article class="project">
-    <h1>{{ project.title }}</h1>
+  <h1>{{ project.title }}</h1>
 
-    <div class="entry">
-        {{ content }}
-    </div>
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  {% include disqus.html %}
 </article>
