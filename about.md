@@ -6,6 +6,10 @@ permalink: /about/
 
 Hi! My name is Kenny and I am currently a sophomore at The Univeristy of Wisconsin-Madison. My hobbies include late-night coding sessions with friends, watching movies/shows, going out to eat, and running! If you want to work on any projects together, feel free to shoot me an email!
 
+### More About Me
+
+My passion for software development sparked after I competed in a hackathon for high school students. I believe my desire to learn and push the boundaries helped my team earn a top spot. Since then, my mission has been to explore the ways computer science and software development can be applied to various projects that advance our society. As I continue to expand my knowledge in CS, I am excited by the limitless possibilities for innovation. Currently, my top skills are in Java, Python, and web development. 
+
 ### Coding Technologies I am Familiar With
 
 <style>
