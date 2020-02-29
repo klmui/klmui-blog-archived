@@ -2,6 +2,7 @@
 layout: post
 title: Passion and Purpose - UW-Madison Essay
 comments: true
+category: Motivational
 ---
 
 My cross country and track journey is best described through my application essay for UW-Madison. I hope this inspires you!
