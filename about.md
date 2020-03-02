@@ -40,7 +40,7 @@ My passion for software development sparked after I competed in a hackathon for 
     <tr>
       <td style="text-align: center">JavaScript</td>
       <td style="text-align: center">Angular</td>
-      <td style="text-align: center"></td>
+      <td style="text-align: center">SQLite</td>
     </tr>
     <tr>
       <td style="text-align: center">Java</td>
