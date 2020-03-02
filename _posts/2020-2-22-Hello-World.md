@@ -3,7 +3,6 @@ layout: post
 title: Hello World!
 comments: true
 category: Motivational
-type: post
 ---
 
 This is my first ever blog! I've been writing in a daily growth journal for a year now, and I am hoping that this experience will help me grow even more! I am excited to start writing publically and share my experiences about life and coding. However, I am not sure if I want to update this blog weekly or monthly yet. Here are some of my favorite pictures from the summer of 2019 at Devil's Lake in Baraboo, WI!
