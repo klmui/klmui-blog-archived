@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Your Coding Break 1
+title: Got a 10-15 Minute Break? - Your Coding Break 1
 comments: true
 category: Comedy
 type: post
 ---
 
-# Got a 10-15 minute break?
 ## Your Coding Break is a short post where I share funny content related (or not) to CS. I hope you find it entertaining!
 
 - Let me know if this represents your company right now! Please stay safe and take COVID-19 seriously!
