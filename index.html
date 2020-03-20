@@ -11,7 +11,7 @@ layout: default
   <option value="Random/Other">Random/Other</option>
 </select>
 
-<div class="posts">
+<div class="posts" id="allPosts">
   {% for post in site.posts %}
     {% if post.type == "post" %}
 
@@ -35,8 +35,11 @@ layout: default
 </div>
 
 <script>
+  var posts = document.getElementById('allPosts');
   function sort() {
     var selectValue = document.getElementById('inlineFormCustomSelectPref').value;
     console.log(selectValue);
+
+    posts.innerHTML = "<h1> Changed </h1>";
   }
 </script>
