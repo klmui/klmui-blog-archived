@@ -2,6 +2,15 @@
 layout: default
 ---
 
+<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Category</label>
+<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+  <option selected>All</option>
+  <option value="1">Motivational</option>
+  <option value="2">Educational</option>
+  <option value="3">Comedy</option>
+  <option value="3">Random/Other</option>
+</select>
+
 <div class="posts">
   {% for post in site.posts %}
     {% if post.type == "post" %}

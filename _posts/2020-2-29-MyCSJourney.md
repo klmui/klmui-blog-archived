@@ -2,7 +2,7 @@
 layout: post
 title: How Did I End Up Here?
 comments: true
-category: Motivational/Education
+category: Motivational
 type: post
 ---
 
