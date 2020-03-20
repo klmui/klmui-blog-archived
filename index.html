@@ -2,7 +2,43 @@
 layout: default
 ---
 
+<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Category</label>
+<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" onchange="sayHello()">
+  <option value="All" selected>All</option>
+  <option value="Motivational">Motivational</option>
+  <option value="Educational">Educational</option>
+  <option value="Comedy">Comedy</option>
+  <option value="Random/Other">Random/Other</option>
+</select>
+
+<div class="posts">
+  {% for post in site.posts %}
+    {% if post.type == "post" %}
+
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <p>Category: {{ post.category }}</p>
+      <div class="date">
+        Written on {{ post.date | date: "%B %e, %Y" }}
+      </div>
+
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>
+
 <script>
+  function sayHello() {
+    console.log("Hello");
+  }
+
   const select = document.querySelector('select');
   var posts = document.querySelector('posts');
   var category = select[select.selectedIndex].value;
@@ -101,35 +137,3 @@ layout: default
     }
   }
 </script>
-
-<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Category</label>
-<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" onchange="changeFilter()">
-  <option value="All" selected>All</option>
-  <option value="Motivational">Motivational</option>
-  <option value="Educational">Educational</option>
-  <option value="Comedy">Comedy</option>
-  <option value="Random/Other">Random/Other</option>
-</select>
-
-<div class="posts">
-  {% for post in site.posts %}
-    {% if post.type == "post" %}
-
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <p>Category: {{ post.category }}</p>
-      <div class="date">
-        Written on {{ post.date | date: "%B %e, %Y" }}
-      </div>
-
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-    {% endif %}
-  {% endfor %}
-</div>
