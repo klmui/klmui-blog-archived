@@ -3,7 +3,7 @@ layout: default
 ---
 
 <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Category</label>
-<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" onchange=sayHello()>
+<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
   <option value="All" selected>All</option>
   <option value="Motivational">Motivational</option>
   <option value="Educational">Educational</option>
@@ -35,13 +35,13 @@ layout: default
 </div>
 
 <script>
-  function sayHello() {
-    console.log("Hello");
-  }
-
   const select = document.querySelector('select');
   var posts = document.querySelector('posts');
   var category = select[select.selectedIndex].value;
+
+  select.setAttribute("onchange", function() {
+    console.log("Hello");
+  });
 
   function changeFilter() {
     if (category === "All") {
