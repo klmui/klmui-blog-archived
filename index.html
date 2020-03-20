@@ -12,6 +12,8 @@ layout: default
 </select>
 
 <div class="posts" id="allPosts">
+  <!-- All -->
+  <template>
   {% for post in site.posts %}
     {% if post.type == "post" %}
 
@@ -23,6 +25,28 @@ layout: default
         Written on {{ post.date | date: "%B %e, %Y" }}
       </div>
 
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endif %}
+  {% endfor %}
+  </template>
+
+  <!-- Educational -->
+  <template>
+  {% for post in site.posts %}
+    {% if post.type == "post" && post.category == "Educational" %}
+
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <p>Category: {{ post.category }}</p>
+      <div class="date">
+        Written on {{ post.date | date: "%B %e, %Y" }}
+      </div>
 
       <div class="entry">
         {{ post.excerpt }}
@@ -32,17 +56,108 @@ layout: default
     </article>
     {% endif %}
   {% endfor %}
+  </template>
+
+  <!-- Motivational -->
+  <template>
+  {% for post in site.posts %}
+    {% if post.type == "post" && post.category == "Motivational" %}
+
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <p>Category: {{ post.category }}</p>
+      <div class="date">
+        Written on {{ post.date | date: "%B %e, %Y" }}
+      </div>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endif %}
+  {% endfor %}
+  </template>
+
+  <!-- Comedy -->
+  <template>
+  {% for post in site.posts %}
+    {% if post.type == "post" && post.category == "Comedy" %}
+
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <p>Category: {{ post.category }}</p>
+      <div class="date">
+        Written on {{ post.date | date: "%B %e, %Y" }}
+      </div>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endif %}
+  {% endfor %}
+  </template>
+
+  <!-- Random/Other -->
+  <template>
+  {% for post in site.posts %}
+    {% if post.type == "post" && post.category == "Random/Other" %}
+
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <p>Category: {{ post.category }}</p>
+      <div class="date">
+        Written on {{ post.date | date: "%B %e, %Y" }}
+      </div>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endif %}
+  {% endfor %}
+  </template>
 </div>
 
 <script>
   var posts = document.getElementById('allPosts');
   function sort() {
     var selectValue = document.getElementById('inlineFormCustomSelectPref').value;
-    console.log(selectValue);
-
-    posts.innerHTML = "<h1> Changed </h1>";
-    site.posts.foreach(function(post) {
-      console.log(post);
-    });
+    switch (selectValue) {
+      case "All":
+        var temp = document.getElementsByTagName("template")[0];
+        var clon = temp.content.cloneNode(true);
+        posts.appendChild(clone);
+        break;
+      case "Educational":
+        var temp = document.getElementsByTagName("template")[1];
+        var clon = temp.content.cloneNode(true);
+        posts.appendChild(clone);
+        break;
+      case "Motivational":
+        var temp = document.getElementsByTagName("template")[2];
+        var clon = temp.content.cloneNode(true);
+        posts.appendChild(clone);
+        break;
+      case "Comedy": 
+        var temp = document.getElementsByTagName("template")[3];
+        var clon = temp.content.cloneNode(true);
+        posts.appendChild(clone);
+        break;
+      case "Random/Other":
+        var temp = document.getElementsByTagName("template")[4];
+        var clon = temp.content.cloneNode(true);
+        posts.appendChild(clone);
+        break;
+    }
   }
 </script>
