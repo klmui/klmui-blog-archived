@@ -40,28 +40,6 @@ layout: default
     var selectValue = document.getElementById('inlineFormCustomSelectPref').value;
     console.log(selectValue);
 
-    posts.innerHTML = 
-    "<div class='posts' id='allPosts'>" +
-      "{% for post in site.posts %}" +
-        "{% if post.type == 'post' %}" +
-
-        "<article class='post'>" +
-
-          "<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1>" +
-          "<p>Category: {{ post.category }}</p>" +
-          "<div class='date'>" +
-            "Written on {{ post.date | date: '%B %e, %Y' }}" +
-          "</div>" +
-
-
-          "<div class='entry'>" +
-            "{{ post.excerpt }}" +
-          "</div>" +
-
-          "<a href='{{ site.baseurl }}{{ post.url }}' class='read-more'>Read More</a>" +
-          "</article>" +
-        "{% endif %}" +
-      "{% endfor %}" +
-    "</div>";
+    posts.innerHTML = "<h1> Changed </h1>";
   }
 </script>
