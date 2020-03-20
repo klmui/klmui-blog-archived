@@ -3,7 +3,7 @@ layout: default
 ---
 
 <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Category</label>
-<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" onchange="sort()">
   <option value="All" selected>All</option>
   <option value="Motivational">Motivational</option>
   <option value="Educational">Educational</option>
@@ -35,105 +35,8 @@ layout: default
 </div>
 
 <script>
-  const select = document.querySelector('#inlineFormCustomSelectPref');
-  var category = select[select.selectedIndex].value;
-  var posts = document.querySelector('.posts');
-
-  select.setAttribute("onchange", function() {
-    console.log("Hello");
-  });
-
-  function changeFilter() {
-    if (category === "All") {
-      console.log('All');
-      posts.innerHTML = 
-      "{% for post in site.posts %}" +
-        "{% if post.type == 'post' %}" +
-        "<article class='post'>" +
-          "<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1>" +
-          "<p>Category: {{ post.category }}</p>" +
-          "<div class='date'>" +
-            "Written on {{ post.date | date: '%B %e, %Y' }}" +
-          "</div>" +
-          "<div class='entry'>" +
-            "{{ post.excerpt }}" +
-          "</div>" +
-            "<a href='{{ site.baseurl }}{{ post.url }}' class='read-more'>Read More</a>" +
-          "</article>" +
-        "{% endif %}" +
-      "{% endfor %}"
-    } else if (category === "Motivational") {
-      console.log('M');
-      post.innerHTML =
-      "{% for post in site.posts %}" +
-        "{% if post.type == 'post' && post.category == 'Motivational'%}" +
-        "<article class='post'>" +
-          "<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1>" +
-          "<p>Category: {{ post.category }}</p>" +
-          "<div class='date'>" +
-            "Written on {{ post.date | date: '%B %e, %Y' }}" +
-          "</div>" +
-          "<div class='entry'>" +
-            "{{ post.excerpt }}" +
-          "</div>" +
-            "<a href='{{ site.baseurl }}{{ post.url }}' class='read-more'>Read More</a>" +
-          "</article>" +
-        "{% endif %}" +
-      "{% endfor %}"
-    } else if (category === 'Educational') {
-      console.log('E');
-      post.innerHTML =
-      "{% for post in site.posts %}" +
-        "{% if post.type == 'post' && post.category == 'Educational'%}" +
-        "<article class='post'>" +
-          "<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1>" +
-          "<p>Category: {{ post.category }}</p>" +
-          "<div class='date'>" +
-            "Written on {{ post.date | date: '%B %e, %Y' }}" +
-          "</div>" +
-          "<div class='entry'>" +
-            "{{ post.excerpt }}" +
-          "</div>" +
-            "<a href='{{ site.baseurl }}{{ post.url }}' class='read-more'>Read More</a>" +
-          "</article>" +
-        "{% endif %}" +
-      "{% endfor %}"
-    } else if (category === "Random/Other") {
-      console.log('R');
-      post.innerHTML =
-      "{% for post in site.posts %}" +
-        "{% if post.type == 'post' && post.category== 'Random/Other'%}" +
-        "<article class='post'>" +
-          "<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1>" +
-          "<p>Category: {{ post.category }}</p>" +
-          "<div class='date'>" +
-            "Written on {{ post.date | date: '%B %e, %Y' }}" +
-          "</div>" +
-          "<div class='entry'>" +
-            "{{ post.excerpt }}" +
-          "</div>" +
-            "<a href='{{ site.baseurl }}{{ post.url }}' class='read-more'>Read More</a>" +
-          "</article>" +
-        "{% endif %}" +
-      "{% endfor %}"
-    } else if (category === "Comedy") {
-      console.log('C');
-      post.innerHTML =
-      "{% for post in site.posts %}" +
-        "{% if post.type == 'post' && post.category== 'Comedy'%}" +
-        "<article class='post'>" +
-          "<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1>" +
-          "<p>Category: {{ post.category }}</p>" +
-          "<div class='date'>" +
-            "Written on {{ post.date | date: '%B %e, %Y' }}" +
-          "</div>" +
-          "<div class='entry'>" +
-            "{{ post.excerpt }}" +
-          "</div>" +
-            "<a href='{{ site.baseurl }}{{ post.url }}' class='read-more'>Read More</a>" +
-          "</article>" +
-        "{% endif %}" +
-      "{% endfor %}"
-    }
+  function sort() {
+    var selectValue = document.getElementById('inlineFormCustomSelectPref').value;
+    console.log(selectValue);
   }
 </script>
