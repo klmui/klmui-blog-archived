@@ -40,6 +40,7 @@ layout: default
 
   function changeFilter(category) {
     if (category === "All") {
+      console.log('All');
       posts.innerHTML = 
       "{% for post in site.posts %}" +
         "{% if post.type == 'post' %}" +
@@ -57,6 +58,7 @@ layout: default
         "{% endif %}" +
       "{% endfor %}"
     } else if (category === "Motivational") {
+      console.log('M');
       post.innerHTML =
       "{% for post in site.posts %}" +
         "{% if post.type == 'post' && post.category == 'Motivational'%}" +
@@ -74,6 +76,7 @@ layout: default
         "{% endif %}" +
       "{% endfor %}"
     } else if (category === 'Educational') {
+      console.log('E');
       post.innerHTML =
       "{% for post in site.posts %}" +
         "{% if post.type == 'post' && post.category == 'Educational'%}" +
@@ -91,9 +94,28 @@ layout: default
         "{% endif %}" +
       "{% endfor %}"
     } else if (category === "Random/Other") {
+      console.log('R');
       post.innerHTML =
       "{% for post in site.posts %}" +
         "{% if post.type == 'post' && post.category== 'Random/Other'%}" +
+        "<article class='post'>" +
+          "<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1>" +
+          "<p>Category: {{ post.category }}</p>" +
+          "<div class='date'>" +
+            "Written on {{ post.date | date: '%B %e, %Y' }}" +
+          "</div>" +
+          "<div class='entry'>" +
+            "{{ post.excerpt }}" +
+          "</div>" +
+            "<a href='{{ site.baseurl }}{{ post.url }}' class='read-more'>Read More</a>" +
+          "</article>" +
+        "{% endif %}" +
+      "{% endfor %}"
+    } else if (category === "Comedy") {
+      console.log('C');
+      post.innerHTML =
+      "{% for post in site.posts %}" +
+        "{% if post.type == 'post' && post.category== 'Comedy'%}" +
         "<article class='post'>" +
           "<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1>" +
           "<p>Category: {{ post.category }}</p>" +
