@@ -41,5 +41,8 @@ layout: default
     console.log(selectValue);
 
     posts.innerHTML = "<h1> Changed </h1>";
+    site.posts.foreach(function(post) {
+      console.log(post);
+    });
   }
 </script>
