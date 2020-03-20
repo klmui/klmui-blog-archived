@@ -35,9 +35,9 @@ layout: default
 </div>
 
 <script>
-  const select = document.querySelector('select');
-  var posts = document.querySelector('posts');
+  const select = document.querySelector('#inlineFormCustomSelectPref');
   var category = select[select.selectedIndex].value;
+  var posts = document.querySelector('.posts');
 
   select.setAttribute("onchange", function() {
     console.log("Hello");
