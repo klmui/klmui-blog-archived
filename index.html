@@ -143,47 +143,50 @@ layout: default
         console.log("case " + selectValue);
         var temp = document.getElementsByTagName("template")[0];
         var clon = temp.content.cloneNode(true);
-        //var prev = document.getElementsByClassName("templatePosts")[0];
-        // if (prev) {
-        //   console.log("prev" + prev);
-        //   posts.removeChild(prev);
-        // }
+        var previousPosts = document.getElementsByClassName("post");
+        previousPosts.array.forEach(post => {
+          posts.removeChild(post);
+        });
         posts.appendChild(clon);
         break;
       case "Educational":
         console.log("case " + selectValue);
         var temp = document.getElementsByTagName("template")[1];
         var clon = temp.content.cloneNode(true);
-        // var prev = document.getElementsByClassName("templatePosts")[0];
-        // console.log("prev" + prev);
-        // posts.removeChild(prev);
+        var previousPosts = document.getElementsByClassName("post");
+        previousPosts.array.forEach(post => {
+          posts.removeChild(post);
+        });
         posts.appendChild(clon);
         break;
       case "Motivational":
         console.log("case " + selectValue);
         var temp = document.getElementsByTagName("template")[2];
         var clon = temp.content.cloneNode(true);
-        // var prev = document.getElementsByClassName("templatePosts")[0];
-        // console.log("prev" + prev);
-        // posts.removeChild(prev);
+        var previousPosts = document.getElementsByClassName("post");
+        previousPosts.array.forEach(post => {
+          posts.removeChild(post);
+        });
         posts.appendChild(clon);
         break;
       case "Comedy": 
         console.log("case " + selectValue);
         var temp = document.getElementsByTagName("template")[3];
         var clon = temp.content.cloneNode(true);
-        // var prev = document.getElementsByClassName("templatePosts")[0];
-        // console.log("prev" + prev);
-        // posts.removeChild(prev);
+        var previousPosts = document.getElementsByClassName("post");
+        previousPosts.array.forEach(post => {
+          posts.removeChild(post);
+        });
         posts.appendChild(clon);
         break;
       case "Random/Other":
         console.log("case " + selectValue);
         var temp = document.getElementsByTagName("template")[4];
         var clon = temp.content.cloneNode(true);
-        // var prev = document.getElementsByClassName("templatePosts")[0];
-        // console.log("prev" + prev);
-        // posts.removeChild(prev);
+        var previousPosts = document.getElementsByClassName("post");
+        previousPosts.array.forEach(post => {
+          posts.removeChild(post);
+        });
         posts.appendChild(clon);
         break;
     }
