@@ -129,6 +129,12 @@ layout: default
 </div>
 
 <script>
+  window.onload = function() {
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    posts.appendChild(clon);
+  };
+
   var posts = document.getElementById('allPosts');
   function sort() {
     var selectValue = document.getElementById('inlineFormCustomSelectPref').value;
