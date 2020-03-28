@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Entrepreneurial Engineering
+title: Nine Essential Tips for New Programmers
 comments: true
 category: Educational
 type: post
